@@ -1,12 +1,16 @@
 package simple;
 
+import payment.CreditCardPayment;
+import payment.Payment;
+import payment.PaypalPayment;
+
 import java.util.Objects;
 
 public class PaymentFactory {
 
     public static Payment getPaymentMethod(String type) {
         if(Objects.isNull(type)) {
-            throw new IllegalArgumentException("simple.Payment type can not be null or empty");
+            throw new IllegalArgumentException("payment.Payment type can not be null or empty");
         }
 
         return switch (type.toUpperCase()) {

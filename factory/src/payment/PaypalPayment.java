@@ -1,8 +1,8 @@
-package simple;
+package payment;
 
 public class PaypalPayment implements Payment{
     @Override
     public void process() {
-        System.out.println("Processing PayPal simple.Payment");
+        System.out.println("Processing PayPal payment.");
     }
 }

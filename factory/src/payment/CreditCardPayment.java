@@ -1,6 +1,6 @@
-package simple;
+package payment;
 
-public class CreditCardPayment implements Payment{
+public class CreditCardPayment implements Payment {
     @Override
     public void process() {
         System.out.println("Processing credit card payment");

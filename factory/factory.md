@@ -19,8 +19,8 @@ It helps you:
 ## Basic Problem (Without Factory)
 
 ```java
-import simple.CreditCardPayment;
-import simple.PaypalPayment;
+import payment.CreditCardPayment;
+import payment.PaypalPayment;
 
 public class PaymentService {
     public void pay(String type) {
@@ -60,7 +60,7 @@ public class PaymentService {
 Instead of a single factory class, **subclasses decide what to create**.
 
 ```java
-import simple.Payment;
+import payment.Payment;
 
 public abstract class PaymentCreator {
     public abstract Payment createPayment();
@@ -68,8 +68,8 @@ public abstract class PaymentCreator {
 ```
 
 ```java
-import simple.CreditCardPayment;
-import simple.Payment;
+import payment.CreditCardPayment;
+import payment.Payment;
 
 public class CreditPaymentCreator extends PaymentCreator {
     @Override
