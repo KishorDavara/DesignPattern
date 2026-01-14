@@ -1,6 +1,6 @@
-package GoF;
+package factory.GoF;
 
-import payment.Payment;
+import factory.payment.Payment;
 
 public abstract class PaymentCreator {
     //Factory Method

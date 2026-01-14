@@ -1,4 +1,4 @@
-package payment;
+package factory.payment;
 
 public class CreditCardPayment implements Payment {
     @Override

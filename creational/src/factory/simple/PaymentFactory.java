@@ -1,8 +1,8 @@
-package simple;
+package factory.simple;
 
-import payment.CreditCardPayment;
-import payment.Payment;
-import payment.PaypalPayment;
+import factory.payment.CreditCardPayment;
+import factory.payment.Payment;
+import factory.payment.PaypalPayment;
 
 import java.util.Objects;
 

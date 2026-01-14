@@ -1,8 +1,10 @@
-import GoF.CreditCardPaymentCreator;
-import GoF.PaymentCreator;
-import GoF.PaypalPaymentCreator;
-import payment.Payment;
-import simple.PaymentFactory;
+package factory;
+
+import factory.GoF.CreditCardPaymentCreator;
+import factory.GoF.PaymentCreator;
+import factory.GoF.PaypalPaymentCreator;
+import factory.payment.Payment;
+import factory.simple.PaymentFactory;
 
 public class Main {
     public static void main(String[] args) {

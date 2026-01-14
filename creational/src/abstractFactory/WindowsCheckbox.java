@@ -1,3 +1,5 @@
+package abstractFactory;
+
 public class WindowsCheckbox implements Checkbox {
     @Override
     public void print() {

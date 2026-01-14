@@ -1,7 +1,7 @@
-package GoF;
+package factory.GoF;
 
-import payment.CreditCardPayment;
-import payment.Payment;
+import factory.payment.CreditCardPayment;
+import factory.payment.Payment;
 
 public class CreditCardPaymentCreator extends PaymentCreator {
 

@@ -1,7 +1,7 @@
-package GoF;
+package factory.GoF;
 
-import payment.Payment;
-import payment.PaypalPayment;
+import factory.payment.Payment;
+import factory.payment.PaypalPayment;
 
 public class PaypalPaymentCreator extends PaymentCreator {
 
