@@ -359,3 +359,264 @@ interface Visitor {
 ✅ Observer
 
 ---
+
+Below is a **practical, industry-focused list of the MOST USED Design Patterns**, especially relevant for **Java, Spring, backend, and interview preparation**.
+
+I’ve grouped them by **category**, ranked by **real-world usage**, and added **when you should use each**.
+
+---
+
+## 🔥 TOP 10 MOST USED DESIGN PATTERNS (Overall)
+
+1. **Singleton**
+2. **Factory Method**
+3. **Strategy**
+4. **Observer**
+5. **Builder**
+6. **Decorator**
+7. **Adapter**
+8. **Proxy**
+9. **Facade**
+10. **Template Method**
+
+👉 If you master these 10, you cover **80–90% of real-world use cases**.
+
+---
+
+## 🧱 CREATIONAL PATTERNS (Object Creation)
+
+![Image](https://www.tutorialspoint.com/design_pattern/images/singleton_pattern_uml_diagram.jpg)
+
+![Image](https://upload.wikimedia.org/wikipedia/commons/4/43/W3sDesign_Factory_Method_Design_Pattern_UML.jpg)
+
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20240206185827/UML-Class-Diagram-for-Builder-Design-Pattern.webp)
+
+### 1️⃣ Singleton
+
+**Most used pattern ever**
+
+📌 Use when:
+
+* Only **one instance** should exist
+* Shared resources (config, cache, logger)
+
+✔ Examples:
+
+* Spring Beans (default scope)
+* Logger
+* Configuration classes
+
+---
+
+### 2️⃣ Factory Method
+
+📌 Use when:
+
+* Object creation logic should be hidden
+* You want loose coupling
+
+✔ Examples:
+
+* `BeanFactory`
+* `ShapeFactory`
+* Payment object creation
+
+---
+
+### 3️⃣ Builder
+
+📌 Use when:
+
+* Object has many optional fields
+* You want readable object creation
+
+✔ Examples:
+
+* `StringBuilder`
+* Lombok `@Builder`
+* Immutable objects
+
+---
+
+## 🧩 STRUCTURAL PATTERNS (Object Composition)
+
+![Image](https://www.tutorialspoint.com/design_pattern/images/decorator_pattern_uml_diagram.jpg)
+
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20250905161148734950/Adapter-Design-Pattern.webp)
+
+![Image](https://upload.wikimedia.org/wikipedia/commons/6/6e/W3sDesign_Proxy_Design_Pattern_UML.jpg)
+
+![Image](https://www.tutorialspoint.com/design_pattern/images/proxy_pattern_uml_diagram.jpg)
+
+### 4️⃣ Decorator
+
+📌 Use when:
+
+* Add behavior **dynamically**
+* Avoid subclass explosion
+
+✔ Examples:
+
+* Java I/O streams
+* Spring filters
+* Feature toggles
+
+---
+
+### 5️⃣ Adapter
+
+📌 Use when:
+
+* Integrating incompatible interfaces
+
+✔ Examples:
+
+* Legacy system integration
+* API wrappers
+* DTO adapters
+
+---
+
+### 6️⃣ Proxy
+
+📌 Use when:
+
+* Control access
+* Lazy loading
+* Add logging, security
+
+✔ Examples:
+
+* Spring AOP
+* Hibernate lazy loading
+* API gateway
+
+---
+
+### 7️⃣ Facade
+
+📌 Use when:
+
+* Simplify complex subsystems
+
+✔ Examples:
+
+* Service layer
+* Library wrappers
+* SDK APIs
+
+---
+
+## 🔄 BEHAVIORAL PATTERNS (Communication & Behavior)
+
+![Image](https://upload.wikimedia.org/wikipedia/commons/3/39/Strategy_Pattern_in_UML.png)
+
+![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/500px-Observer_w_update.svg.png)
+
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20240213124632/TemplateMethodComponent-%281%29.webp)
+
+![Image](https://reactiveprogramming.io/_next/image?q=75\&url=%2Fbooks%2Fpatterns%2Fimg%2Fpatterns-articles%2Ftemplete-method-diagram.png\&w=3840)
+
+### 8️⃣ Strategy
+
+📌 Use when:
+
+* Multiple algorithms
+* Runtime behavior switching
+
+✔ Examples:
+
+* Payment methods
+* Sorting
+* Discount logic
+
+---
+
+### 9️⃣ Observer
+
+📌 Use when:
+
+* One-to-many notifications
+* Event-driven systems
+
+✔ Examples:
+
+* Spring Events
+* Message listeners
+* UI listeners
+
+---
+
+### 🔟 Template Method
+
+📌 Use when:
+
+* Algorithm skeleton is fixed
+* Steps vary
+
+✔ Examples:
+
+* Spring JDBC templates
+* Workflow processing
+
+---
+
+## 📊 MOST USED IN SPRING / ENTERPRISE JAVA
+
+| Pattern   | Usage |
+| --------- | ----- |
+| Singleton | ⭐⭐⭐⭐⭐ |
+| Factory   | ⭐⭐⭐⭐⭐ |
+| Proxy     | ⭐⭐⭐⭐⭐ |
+| Strategy  | ⭐⭐⭐⭐  |
+| Observer  | ⭐⭐⭐⭐  |
+| Decorator | ⭐⭐⭐⭐  |
+| Facade    | ⭐⭐⭐⭐  |
+| Builder   | ⭐⭐⭐   |
+
+---
+
+## 🎯 MOST IMPORTANT FOR INTERVIEWS
+
+**Must-know (No excuse):**
+
+* Singleton
+* Factory
+* Strategy
+* Observer
+* Decorator
+* Proxy
+
+**Good to know:**
+
+* Adapter
+* Facade
+* Template Method
+* Chain of Responsibility
+
+---
+
+## 🧠 Quick Decision Guide
+
+| If you need to…            | Use       |
+| -------------------------- | --------- |
+| Ensure one instance        | Singleton |
+| Create objects flexibly    | Factory   |
+| Change behavior at runtime | Strategy  |
+| Notify many objects        | Observer  |
+| Add features dynamically   | Decorator |
+| Control access             | Proxy     |
+| Simplify complexity        | Facade    |
+| Build complex objects      | Builder   |
+
+---
+
+## 🚀 How to Learn Effectively
+
+1. Learn **intent**
+2. Learn **UML**
+3. Code **one real example**
+4. Map it to **Spring usage**
+5. Practice **interview questions**
+
+---
